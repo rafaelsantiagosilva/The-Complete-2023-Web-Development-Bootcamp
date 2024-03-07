@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Separetion of Concerns</title>
+    <style>
+        button:active {
+            background-color: red;
+            color: white;
+        }
+
+        .invisible {
+            visibility: hidden;
+        }
+
+        .enorme {
+            font-size: 10em;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Hello</h1>
+    <a href="https://www.google.com">Google</a>
+    <input type="checkbox">
+
+    <button class="btn">Click Me</button>
+
+    <ul>
+        <li class="list">
+            <a href="https://www.google.com">Google</a>
+        </li>
+        <li class="list">second</li>
+        <li class="list">third</li>
+    </ul>
+
+    <script>
+        document.querySelector("a").attributes; // Listando os atributos de link, no caso href
+        document.querySelector("a").getAttribute("href"); // Pegando o que está dentro do atributo href
+        document.querySelector("a").setAttribute("href", "https://www.bing.com"); // Alterando o valor de um atributo
+    </script>
+
+</body>
+
+
+</html>

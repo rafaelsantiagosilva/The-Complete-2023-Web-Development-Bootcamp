@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Técnicas mais "avançadas"</title>
+</head>
+<body>
+    
+</body>
+<script>
+
+// let array = [1, 2, 3, 4, 5];
+
+// array.pop; // Vai tirar o último item do array (5)
+// array.push(); // Vai adicionar um elemento ao array e vai aumentar o seu tamanho
+var output = [];
+var count = 1;
+
+function FizzBuzz(){
+
+    for(count = 1; count <= 100; count++){
+        if(count % 15 === 0){
+            output.push("FizzBuzz");
+        } else if(count % 3 === 0){
+            output.push("Fizz");
+        } else if(count % 5 === 0){
+            output.push("Buzz");
+        } else {
+            output.push(count);
+        }
+    }
+    console.log(output);
+}
+
+
+
+</script>
+</html>

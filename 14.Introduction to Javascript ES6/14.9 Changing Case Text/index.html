@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Changing Case Text</title>
+</head>
+<body>
+    
+</body>
+<script>
+    // var nome = "rafael";
+    // var nomeMaiusculo = nome.toUpperCase();
+    // alert(nomeMaiusculo);
+    // var nomeMinusculo = nomeMaiusculo.toLowerCase();
+    // alert(nomeMinusculo);
+    var name = prompt("Qual é seu nome: ");
+    var firstLetter = name.slice(0,1);
+    var lettersAfter1s = name.slice(1,7000);
+    var upperFirstLetter = firstLetter.toUpperCase();
+    var lowerLettersAfter1s = lettersAfter1s.toLowerCase();
+    alert("Bem-vindo " + upperFirstLetter + lowerLettersAfter1s );
+</script>
+</html>

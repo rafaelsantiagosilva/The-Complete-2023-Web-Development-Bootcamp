@@ -1,0 +1,8 @@
+@import url(./output.css);
+
+.square {
+     width: 10rem;
+     height: 10rem;
+     border: 2px solid black;
+     transition: 250ms;
+}

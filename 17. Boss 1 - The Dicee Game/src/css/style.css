@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Press+Start+2P&display=swap');
+
+:root {
+    --fonte_titulo: 'Press Start 2P', cursive;
+    --fonte_destaque: 'Patrick Hand', cursive;
+    --fonte_padrao: 'Verdana', 'Arial', sans-serif;
+}
+
+body {
+    background-color:#141414;
+}
+
+/* Título */
+h1 {
+    font-family: var(--fonte_titulo);
+    font-size: 4em;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 0;
+    color: rgb(33, 219, 33);
+    text-shadow: 3px 3px 1px rgb(20, 54, 21);
+    text-transform: uppercase;
+}
+
+/* Outros títulos */
+h2 {
+    font-family: var(--fonte_destaque);
+    font-size: 2.5em;
+    text-align: center;
+    letter-spacing: 3px;
+    margin-bottom: 5px;
+    color: rgb(32, 207, 32);
+    text-shadow: 1px 1px 1px rgb(24, 73, 34);
+}
+
+/* Principal */
+main {
+    display: flex;
+    margin-top: 10px;
+    justify-content: center;
+    text-align: center;
+}
+
+img {
+    height: 200px;
+    width: 200px;
+}
+
+div {
+    text-align: center;
+    display: inline;
+}
+
+/* Rodapé */
+footer {
+    font-family: var(--fonte_destaque);
+    font-size: 1.25em;
+    margin-top: 90px;
+    text-align: center;
+    width: 100%;
+    color: white;
+}

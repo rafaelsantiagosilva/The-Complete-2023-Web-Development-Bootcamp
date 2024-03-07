@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Separetion of Concerns</title>
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <h1 id="title">Hello</h1>
+    <a href="https://www.google.com">Google</a>
+    <input type="checkbox">
+
+    <button class="btn">Click Me</button>
+
+    <ul>
+        <li class="list">
+            <a href="https://www.google.com">Google</a>
+        </li>
+        <li class="list">second</li>
+        <li class="list">third</li>
+    </ul>
+    <div id="div">
+
+    </div>
+
+    <script>
+        document.getElementById("title").textContent = "Good Bye"; // Muda somente o texto.
+        document.querySelector("div#div").innerHTML = "<h2>Mudando o HTML</h2>" // Muda o HTM, com tags e etc.
+    </script>
+
+</body>
+
+
+</html>

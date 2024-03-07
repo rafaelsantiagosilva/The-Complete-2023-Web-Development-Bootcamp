@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Simon Game</title>
+		<link rel="stylesheet" href="./styles/style.css" />
+		<script src="./scripts/lib/jquery.min.js"></script>
+		<script src="./scripts/build/Game.js" defer></script>
+		<script src="./scripts/build/main.js" defer></script>
+	</head>
+	<body class="flex flex-col justify-between bg-gray-900">
+		<header class="text-center m-5">
+			<h1 id="title" class="text-6xl text-white font-extrabold">Simon Game</h1>
+			<div class="flex justify-between flex-wrap">
+				<div class="text-xl text-white font-mono font-bold">
+					Pontos: <span id="points">0</span>
+				</div>
+				<div class="text-xl text-white font-mono font-bold">
+					Rodada: <span id="round">0</span>
+				</div>
+			</div>
+		</header>
+
+		<main class="flex flex-col items-center m-10">
+			<section
+				class="flex items-center justify-center flex-col bg-black w-fit h-fit border-8 border-gray-400"
+			>
+				<div class="flex">
+					<div id="square-red" class="square bg-red-500"></div>
+					<div id="square-blue" class="square bg-blue-500"></div>
+				</div>
+				<div class="flex">
+					<div id="square-yellow" class="square bg-yellow-500"></div>
+					<div id="square-green" class="square bg-green-500"></div>
+				</div>
+			</section>
+			<button
+				id="start"
+				class="text-black font-mono font-bold text-2xl p-2 bg-gray-200 shadow-lg shadow-gray-950 hover:bg-gray-300 active:shadow-none mt-8 rounded-md"
+			>
+				Começar
+			</button>
+		</main>
+
+		<footer class="text-center m-5 font-medium text-white font-sans">
+			&copy;Rafael Santiago
+		</footer>
+	</body>
+</html>

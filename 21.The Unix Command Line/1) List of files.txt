@@ -1,0 +1,3 @@
+ls => mostra todos os arquivos dentro daquele repositório.
+
+cd

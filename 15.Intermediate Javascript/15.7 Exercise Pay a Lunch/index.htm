@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    let names = [5];
+
+    for(i = 0; i < 5; i++){
+        names[i] = prompt("Write a name:");
+    }
+
+    function whosPaying(names) {
+    
+    /******Don't change the code above*******/
+        
+        //Write your code here.
+        
+        
+        let intervaloReal = Math.random();
+        intervaloReal *= names.length;
+        let pessoaPagar = Math.floor(intervaloReal) + 1;
+        
+        return names[pessoaPagar] +" is going to buy lunch today!";
+    
+    
+    /******Don't change the code below*******/    
+    }
+
+    alert(whosPaying(names));
+</script>
+</html>

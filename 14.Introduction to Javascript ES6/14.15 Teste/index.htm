@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculador de I.M.C</title>
+</head>
+<body>
+    
+</body>
+<script>
+    var weight = prompt("What is your weight?");
+    var height = prompt("And what is your height?");
+
+    function bmiCalculator(weight, height){
+        return weight/Math.round(height, height);
+    }
+
+    var bmi = Math.floor(bmiCalculator(weight, height));
+
+    console.log(bmi);
+</script>
+</html>

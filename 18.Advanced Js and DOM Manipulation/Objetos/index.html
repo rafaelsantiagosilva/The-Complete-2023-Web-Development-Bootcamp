@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com objetos no JavaScript</title>
+</head>
+
+<body>
+
+    <script>
+        // var bellBoy1 = {
+        //     name: "Timmy",
+        //     age: 19,
+        //     hasWorkPermit: true,
+        //     languages: ["French", "English"]
+        // }
+
+        // Constructor Functions
+        function BellBoy(name, age, hasWorkPermit, languages) {
+            this.name = name;
+            this.age = age;
+            this. hasWorkPermit = hasWorkPermit;
+            this.languages = languages; 
+            this.moveSuitcase = function(){
+                alert("May I take your suitcase?");
+                pickUpSuitcase();
+                move();
+            }
+        }
+
+        var bellBoy1 = new BellBoy("Timmy", 19, true, ["French", "English"]);
+        alert("Hello, my name is " + bellBoy1.name);
+
+        // D E S A F I O
+
+        // var houseKeeper1 = {
+        //     anosDeExperiencia: 7,
+        //     nome: "Jane",
+        //     limpa: []
+        // }
+
+        function HouseKeeper(anosDeExperiencia, nome, limpa) {
+            this.nome = nome;
+            this.anosDeExperiencia = anosDeExperiencia;
+            this.limpa = limpa;
+            this.limparAgora = function(){
+                alert("Excuse me, I need clean here now!");
+            }
+        };
+
+        var houseKeeper1 = new HouseKeeper(7, "Jane", ["bathrooms", " lobby", " bedrooms", " living room", " dinner room", " garage", " storage"])
+        alert("Hiii, my name is " + houseKeeper1.nome + " and I have " + houseKeeper1.anosDeExperiencia + " years of experience. I clean the " + houseKeeper1.limpa + ".")
+        houseKeeper1.limparAgora();
+    </script>
+</body>
+
+</html>

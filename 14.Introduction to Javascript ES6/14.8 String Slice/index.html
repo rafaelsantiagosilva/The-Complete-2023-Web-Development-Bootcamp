@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Slice</title>
+</head>
+
+<body>
+    Dividir e cortar strings.
+
+</body>
+
+<script>
+    // variavel.slice(0,1);
+    // Está fazendo com que escolha o caracter da posição 0 até a posição 1 mas não incluindo a posição 1
+    // Programadores sempre contam começando do 0
+    var frase = prompt("Digite uma frase:");
+    var caracteres = frase.length;
+    var qntdFalta = 140 - caracteres;
+    var deletando = frase.slice(0,141);
+    alert("Você escreveu: " + deletando);
+</script>
+
+</html>

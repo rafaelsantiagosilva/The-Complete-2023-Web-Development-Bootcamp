@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Tags EJS</title>
+	</head>
+	<body>
+		<h1>EJS Tags</h1>
+		<p>Segundo atual: <%= seconds %></p>
+
+		<% if (seconds % 2 === 0) { %>
+		<ul>
+			<% for (let i in fruits) { %>
+			<li><%= fruits[i] %></li>
+			<% } %>
+		</ul>
+          
+		<% } else { %>
+		<p>Sem items para mostrar</p>
+		<% } %>
+
+		<div><%- htmlContent %></div>
+		<div><%- include('components/Footer.ejs') %></div>
+	</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <style>
+        button:active {
+            background-color: red;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Hello</h1>
+    <input type="checkbox">
+
+    <button>Click Me</button>
+
+    <ul>
+        <li class="list">
+            <a href="https://www.google.com">Google</a>
+        </li>
+        <li class="list">second</li>
+        <li class="list">third</li>
+    </ul>
+
+    <script charset="UTF-8">
+
+        document.querySelector("h1").innerHTML = "Good Bye";
+        document.firstElementChild; // Primeiro fliho do DOM - <html> ------- </html>
+        document.firstElementChild.firstElementChild; // Primeiro filho do primeiro filho do DOM - <head> ----- </head>
+        document.firstElementChild.lastElementChild; // Último filho do primeiro filho (<html>) do DOM - <body> ------- </body>
+        document.firstElementChild.lastElementChild.firstElementChild; // Primeiro filho do último filho (<body>) do primeiro filho (<html>) do DOM - <h1> ----- </h1>
+        
+        let heading = document.firstElementChild.lastElementChild.firstElementChild; 
+
+        heading.innerHTML = "Adeus";
+
+        document.querySelector("input").click(); // Selecionando a Tag <input> do DOM e fazendo com que ela chegue preenchida
+    </script>
+</body>
+
+
+</html>

@@ -1,0 +1,10 @@
+.big-title {
+    font-size: 10rem;
+    color: yellow;
+    font-family: cursive;
+    text-shadow: 1px 1px 2px black;
+}
+
+.margin-50 {
+    margin: 50px;
+}

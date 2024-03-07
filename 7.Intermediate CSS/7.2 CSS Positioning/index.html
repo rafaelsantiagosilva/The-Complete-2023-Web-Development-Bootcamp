@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Temos diferentes tipos de posicionamento:
+position: relative é relativo a poição original do objeto. Por exemplo, se eu mandar se mover 50px, vai ir 50 px para o lado
+position: absolute vai fazer com que o elemento tenha o mesmo comportamento de seu ancestral mais próximo 
+z-indes: é o atributo de camadas. Quanto maior mais por cima e quanto menor mais por baixo
+position: fixed é relativo ao canto superior direito da tela-->
+
+<head>
+  <title>CSS Positioning Exercise</title>
+  <style>
+    /* Write your code here */
+
+    .blue-box {
+      background-color: blue;
+      height: 300px;
+      width: 500px;
+      position: relative;
+      top: 200px;
+      left: 200px;
+    }
+
+    .red-circle {
+      background-color: red;
+      height: 200px;
+      width: 200px;
+      border-radius: 90%;
+      position: absolute;
+      left: 250px;
+      top: 150px;
+    }
+
+  </style>
+</head>
+
+<body>
+  <div class="blue-box">
+    <div class="red-circle">
+    </div>
+  </div>
+
+</body>
+
+</html>

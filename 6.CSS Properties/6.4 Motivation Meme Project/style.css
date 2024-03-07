@@ -1,0 +1,14 @@
+* {
+    text-align: center;
+    margin: 25px;
+    color: aliceblue;
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+ h1{
+    font-size: 50px;    
+ }
+
+img {
+    border: 5px solid aliceblue;
+}

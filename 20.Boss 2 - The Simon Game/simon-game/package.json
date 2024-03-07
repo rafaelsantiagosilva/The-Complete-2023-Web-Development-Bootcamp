@@ -1,0 +1,12 @@
+{
+  "name": "simon-game",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^5.3.3"
+  },
+  "scripts": {
+    "build": "tsc"
+  }
+}

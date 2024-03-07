@@ -1,0 +1,55 @@
+<!-- 
+    -Jeitos de chamar os elementos do HTML no Js:-
+
+    => document.getElementsByTagName("nome da tag (h1, li, form etc.)")[qual dos itens do array (0, 1, 2, 3 etc.)]
+        - document.getElementsByTagName("li")[2].style.color = "purple"; --- Definindo cor do terceiro li que aparece
+        - document.getElementsByTagName("li").length; --- Quantidade de <li>s 
+    
+    => document.getElementsByClass("nome da classe")[qual dos elementos da classe (0, 1, 2, 3...)];
+
+    => document.getElementById("nome do id");
+
+    => ÚNICO MÉTODO PARA SELEÇÃO ÚNICA:
+     - document.querySelector("nome da tag, nome da tag.nome da classe, nome da tag#nome do ID, nome da tag > nome da tag etc.")
+
+ -->
+ <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <style>
+        button:active {
+            background-color: red;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Hello</h1>
+    <a href="https://www.google.com">Google</a>
+    <input type="checkbox">
+
+    <button>Click Me</button>
+
+    <ul>
+        <li class="list">
+            <a href="https://www.google.com">Google</a>
+        </li>
+        <li class="list">second</li>
+        <li class="list">third</li>
+    </ul>
+
+    <script>
+
+        document.querySelector("li a").style.color = "green";
+
+    </script>
+
+</body>
+
+
+</html>

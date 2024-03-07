@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions Part 3: Outputs and Return Values</title>
+</head>
+<body>
+    
+</body>
+<script>
+    var priceBottles = 1.5;
+    var money = 5.0;
+    var bottles = Math.floor(money/priceBottles); //Math.floor() para arredondar.
+
+    function getMilk(money){   
+    alert("leaveHouse");
+    alert("moveRight");
+    alert("moveRight");
+    alert("moveUp");
+    alert("moveUp");
+    alert("moveUp");
+    alert("moveUp");
+    alert("moveRight");
+    alert("moveRight");
+
+    // Aqui embaixo, a função vai procurar onde foi declarada "calcBottles"
+    // e vai atribuir o valor a ela, o mesmo ocorre para o que está em parenteses 
+    alert("buy "+ calcBottles(money, 1.5) +" bottles of milk.");
+
+    alert("moveLeft");
+    alert("moveLeft");
+    alert("moveDown");
+    alert("moveDown");
+    alert("moveDown");
+    alert("moveDown");
+    alert("moveLeft");
+    alert("moveLeft");
+    alert("enterHouse");
+    
+    // Tá "dando um valor da função"
+        return calcChange(money, 1.5);
+}
+
+    // var change = getMilk(4); /---/
+    // alert(change); /---/
+
+    function calcBottles(startingMoney, costPerBottle) {
+        var numberOfBottles = Math.floor(startingMoney / costPerBottle);
+        
+        return numberOfBottles;
+    }
+
+    function calcChange(startingMoney, costPerBottle){
+        var change = startingMoney % costPerBottle;
+        return change;
+    }
+
+    getMilk(5); // Este 5 está dando o valor para o money lá em cima
+
+    alert("Hello master, here is your $"+ getMilk(5) +" change.")
+</script>
+</html>
